@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="70dp"
+    android:layout_marginRight="70dp"
+    android:background="#aaaaaa"
+    tools:context="com.example.jordan.login.MenuFragment">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:clickable="true"
+            android:onClick="logout"
+            android:minHeight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#cccccc">
+            <TextView
+                android:text="Logout"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:clickable="true"
+            android:onClick="toggleFingerprintFunctionality"
+            android:minHeight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#cccccc">
+            <TextView
+                android:text="Use Touch ID"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp" />
+
+            <ImageView
+                android:src="@drawable/fingerprint"
+                android:adjustViewBounds="true"
+                android:layout_marginLeft="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:clickable="true"
+            android:onClick="sendPushNotification"
+            android:minHeight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#cccccc">
+            <TextView
+                android:text="Send Notification"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:src="@drawable/message"
+                android:layout_marginLeft="10dp"/>
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
