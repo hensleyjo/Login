@@ -62,6 +62,6 @@ public class FingerPrintHandler extends FingerprintManager.AuthenticationCallbac
     @Override
     public void onAuthenticationSucceeded(
             FingerprintManager.AuthenticationResult result) {
-        ((MainActivity)appContext).startWelcomeActivity();
+        ((MainActivity)appContext).touchLogin();
     }
 }
