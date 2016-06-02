@@ -1,6 +1,5 @@
 package com.example.jordan.login;
 
-import android.app.FragmentManager;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;

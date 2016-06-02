@@ -8,10 +8,13 @@
     tools:context="com.example.jordan.login.MenuFragment">
 
     <TableLayout
+        android:id="@+id/menu_container"
+        android:animateLayoutChanges="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TableRow
+            android:id="@+id/menu_row_1"
             android:clickable="true"
             android:onClick="logout"
             android:minHeight="50dp"
